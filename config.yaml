@@ -1,0 +1,21 @@
+# config.yaml
+
+num_epochs: 1000
+save_interval: 10
+val_interval: 5
+patience: 50
+batch_size: 4
+num_workers: 0
+
+# 数据集路径（如果未指定，使用默认路径）
+train_image_dir: null
+train_mask_dir: null
+val_image_dir: null
+val_mask_dir: null
+
+# 测试数据集路径
+test_image_dir: null
+test_groundtruth_dir: null
+
+# 要加载的模型路径
+model_path: null
