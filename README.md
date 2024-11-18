@@ -21,6 +21,25 @@ UNet++
 
 ---
 
+## 環境安裝
+
+為了保證兼容性，**建議在虛擬環境中運行（例如 virtualenv）**。以下是建置環境的步驟：
+
+### 使用GPU訓練
+1. 如果你要使用GPU，我會建議安裝適合你的cuda，我使用的是cuda 12.1 
+
+    可以到 https://developer.nvidia.com/cuda-12-1-0-download-archive 下載
+
+2. 安裝 pytorh，你可以到 https://pytorch.org/ 使用pip安裝，以我的例子來說配合cuda 12.1。
+
+    `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121`
+
+3. 安裝玩cuda、pytorch後在項目環境內安裝 `pip install -r requirements.txt`
+   
+### 使用CPU訓練
+1. 直接在環境內使用 `pip install -r requirements.txt`
+---
+
 ## 模組概覽
 
 
