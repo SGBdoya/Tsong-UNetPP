@@ -14,6 +14,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns  # 用於繪製混淆矩陣
 
+plt.rcParams['font.sans-serif'] = ['Microsoft JhengHei']  # 選擇微軟正黑體
+plt.rcParams['axes.unicode_minus'] = False  # 用來正常顯示負號
+
 # 檢查是否有可用的 GPU，否則使用 CPU
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
